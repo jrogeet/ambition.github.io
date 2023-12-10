@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBITION - Create Teams</title>
+    <link rel="stylesheet" href="/resources/styles/main.css">
+    <link rel="stylesheet" href="/resources/styles/navbar.css">
+    <link rel="stylesheet" href="/resources/styles/footer.css">
+</head>
+<body>
+    <header class="header" id="navbar">
+        <div class="nav-container">
+
+            <div class="logo-container">
+                <!-- <a href="/index.html"><img class="logo nav-select" src="" alt="Website Logo"/></a> -->
+                <a href="/index.html" class="logo-link">
+                    <span class="logo nav-select">A
+                        <span class="logo-span mbti-m">M</span>
+                            <span class="logo-span mbti-b">B</span>
+                            <span class="logo-span">I</span><span class="logo-span">
+                                <span class="logo-span mbti-t">T</span>
+                                <span class="logo-span mbti-i">I</span>
+                                O N</span></a>
+            </div>
+
+            <nav class="main-nav nav-select">
+                <ul>
+                    <li class="main-nav-li"><a href="/index.html" class="nav-btn btn-home">HOME</a></li>
+                    <li class="main-nav-li"><a href="/main.html" class="nav-btn btn-create">CREATE</a></li>
+                    <li class="main-nav-li"><a href="/mbti.html" class="nav-btn btn-mbti">MBTI</a></li>
+                    <li class="main-nav-li"><a href="/about.html" class="nav-btn btn-about">ABOUT</a></li>
+                </ul>
+            </nav>
+
+            <div class="account-container">
+                <a href="#" class="account nav-select"><img src="/resources/images/icons/accountblack.png" class="account-img" alt="Login Icon"/></a>
+            </div> 
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section-input">
+
+            <a class="guide-button" href="about.html#how-it-works">How it works?</a>
+
+            <div class="selection-container">
+                <div class="types-selection">
+
+                    <div class="mbti-boxes type-green">
+                        <div class="mbti-type-n-img">
+                          <span class="mbti-type">E<span class="mbti-m">NF</span>J</span>
+                          <img src="resources/images/MBTI Avatars/png/ENFJ.png" class="mbti-avatars mbti-selection-enfj-img" id="" alt=""/>
+
+                        </div>
+                        <div class="mbti-type-input">
+                          <input type="text" class="add-name" id="ENFJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ENFJ')">
+                          <button onclick="storeInput('ENFJ')" class="mbti-ok-button" id="enfj-btn">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="mbti-boxes type-green">
+                        <div class="mbti-type-n-img">
+                            <span class="mbti-type">E<span class="mbti-m">NF</span>P</span>
+                            <img src="/resources/images/MBTI Avatars/png/ENFP.png" class="mbti-avatars mbti-selection-enfp-img" id="" alt=""/>
+                        </div>
+                        <div class="mbti-type-input">
+                            <input type="text" class="add-name" id="ENFP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ENFP')">
+                            <button onclick="storeInput('ENFP')" class="mbti-ok-button" id="enfp-btn">ADD</button>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="mbti-boxes type-blue">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">E<span class="mbti-b">S</span>F<span class="mbti-b">J</span></span>
+                        <img src="/resources/images/MBTI Avatars/png/ESFJ.png" class="mbti-avatars mbti-selection-esfj-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ESFJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ESFJ')">
+                        <button onclick="storeInput('ESFJ')" class="mbti-ok-button" id="esfj-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-blue">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">E<span class="mbti-b">S</span>T<span class="mbti-b">J</span></span>
+                        <img src="/resources/images/MBTI Avatars/png/ESTJ.png" class="mbti-avatars mbti-selection-estj-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ESTJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ESTJ')">
+                        <button onclick="storeInput('ESTJ')" class="mbti-ok-button" id="estj-btn">ADD</button>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="mbti-boxes type-gold">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">E<span class="mbti-t">S</span>F<span class="mbti-t">P</span></span>
+                        <img src="/resources/images/MBTI Avatars/png/ESFP.png" class="mbti-avatars mbti-selection-esfp-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ESFP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ESFP')">
+                        <button onclick="storeInput('ESFP')" class="mbti-ok-button" id="esfp-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-gold">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">E<span class="mbti-t">S</span>T<span class="mbti-t">P</span></span>
+                        <img src="/resources/images/MBTI Avatars/png/ESTP.png" class="mbti-avatars mbti-selection-estp-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ESTP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ESTP')">
+                        <button onclick="storeInput('ESTP')" class="mbti-ok-button" id="estp-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-violet">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">E<span class="mbti-i">NT</span>J</span>
+                        <img src="/resources/images/MBTI Avatars/png/ENTJ.png" class="mbti-avatars mbti-selection-entj-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ENTJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ENTJ')">
+                        <button onclick="storeInput('ENTJ')" class="mbti-ok-button" id="entj-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-violet">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">E<span class="mbti-i">NT</span>P</span>
+                        <img src="/resources/images/MBTI Avatars/png/ENTP.png" class="mbti-avatars mbti-selection-entp-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ENTP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ENTP')">
+                        <button onclick="storeInput('ENTP')" class="mbti-ok-button" id="entp-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-green">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">I<span class="mbti-m">NF</span>J</span>
+                        <img src="/resources/images/MBTI Avatars/png/INFJ.png" class="mbti-avatars mbti-selection-infj-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="INFJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'INFJ')">
+                        <button onclick="storeInput('INFJ')" class="mbti-ok-button" id="infj-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-green">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">I<span class="mbti-m">NF</span>P</span>
+                        <img src="/resources/images/MBTI Avatars/png/INFP.png" class="mbti-avatars mbti-selection-infp-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="INFP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'INFP')">
+                        <button onclick="storeInput('INFP')" class="mbti-ok-button" id="infp-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-blue">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">I<span class="mbti-b">S</span>F<span class="mbti-b">J</span></span>
+                        <img src="/resources/images/MBTI Avatars/png/ISFJ.png" class="mbti-avatars mbti-selection-isfj-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ISFJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ISFJ')">
+                        <button onclick="storeInput('ISFJ')" class="mbti-ok-button" id="isfj-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-blue">
+                        <div class="mbti-type-n-img">
+                            <span class="mbti-type">I<span class="mbti-b">S</span>T<span class="mbti-b">J</span></span>
+                            <img src="/resources/images/MBTI Avatars/png/ISTJ.png" class="mbti-avatars mbti-selection-istj-img" id="" alt=""/>
+                        </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ISTJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ISTJ')">
+                        <button onclick="storeInput('ISTJ')" class="mbti-ok-button" id="istj-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-gold">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">I<span class="mbti-t">S</span>F<span class="mbti-t">P</span></span>
+                        <img src="/resources/images/MBTI Avatars/png/ISFP.png" class="mbti-avatars mbti-selection-isfp-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ISFP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ISFP')">
+                        <button onclick="storeInput('ISFP')" class="mbti-ok-button" id="isfp-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-gold">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">I<span class="mbti-t">S</span>T<span class="mbti-t">P</span></span>
+                        <img src="/resources/images/MBTI Avatars/png/ISTP.png" class="mbti-avatars mbti-selection-istp-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="ISTP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'ISTP')">
+                        <button onclick="storeInput('ISTP')" class="mbti-ok-button" id="istp-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-violet">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">I<span class="mbti-i">NT</span>J</span>
+                        <img src="/resources/images/MBTI Avatars/png/INTJ.png" class="mbti-avatars mbti-selection-intj-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="INTJ" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'INTJ')">
+                        <button onclick="storeInput('INTJ')" class="mbti-ok-button" id="intj-btn">ADD</button>
+                    </div>
+                    </div>
+
+                    <div class="mbti-boxes type-violet">
+                        <div class="mbti-type-n-img">
+                        <span class="mbti-type">I<span class="mbti-i">NT</span>P</span>
+                        <img src="/resources/images/MBTI Avatars/png/INTP.png" class="mbti-avatars mbti-selection-intp-img" id="" alt=""/>
+                    </div>
+                    <div class="mbti-type-input">
+                        <input type="text" class="add-name" id="INTP" placeholder="Enter Name" onkeypress="handleKeyPress(event, 'INTP')">
+                        <button onclick="storeInput('INTP')" class="mbti-ok-button" id="intp-btn">ADD</button>
+                    </div>
+                    </div>
+
+                </div>
+                
+                <div class="main-user-list">
+                    <div class="table-container" id="table-container">
+                        <table class="list-table">
+                            <thead class="table-head">
+                                <tr>
+                                    <th class="table-header">NAME</th>
+                                    <th class="table-header">TYPE</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="inputTableBody" class="table-body">
+                            <!-- Table body will be populated dynamically -->
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="list-input">
+                        <input id="group" class="grp-inp" type="number" placeholder="# OF GROUPS:">
+                        <button id="btn1" class="group-usersBtn" href="result.html">
+                            <a class="group-userTxt" href="#groups-result-header">CREATE</a></button>
+
+                        <!-- <button id="openModalBtn">See results</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-result" id="section-result">
+            <div class="result-wrap">
+                <div class="result-header-container">
+                    <h1 class="result-header" id="groups-result-header">GROUPS FORMED</h1>
+                    <div class="row-column-container">
+                        <button class="result-column" onclick="setFlexDirection('column')"></button>
+                        <button class="result-row" onclick="setFlexDirection('row')"></button>
+
+
+                    </div>
+                </div>
+    
+
+                <div id="tableResult" class="table-result">
+                    <!-- RESULT TABLES ARE GENERATED INSIDE HERE -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <span>FOOTER</span>
+        </div>
+        
+    </footer>
+
+    <script src="/resources/scripts/distribution.js"></script>
+    <script src="/resources/scripts/effects.js"></script>
+
+</body>
+</html>

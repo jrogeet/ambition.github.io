@@ -1,0 +1,173 @@
+@import url(/resources/styles/shared-styles.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: offbit;
+
+    color: #EAE6E5;
+}
+
+html {
+    font-size: 62.5%;  
+}
+
+
+.header {
+    /* background-color: #212121; */
+    background-color: var(--black2);
+    min-width: 140rem;
+    max-width: 135rem;
+    margin: 1.4rem auto;
+
+    border-radius: 1.4rem;
+
+    position: fixed;
+    z-index: 999;
+    transition: top 0.3s;
+}
+
+.nav-container {
+    max-width: 153.6rem;
+    margin: 0 auto;
+    height: 6.6rem;
+    padding: 0 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-select {
+    flex: 0 1 auto;
+}
+
+/* LOGO */
+.logo-container {
+
+    width: 15rem;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 3.8rem;
+    font-family: walvis;
+    color: var(--white1);
+    letter-spacing: -0.4204rem;
+
+}
+
+.logo-span {
+    font-family: walvis;
+}
+
+.logo-link:hover {
+    text-shadow: 0 0 5px var(--white1);
+}
+
+.logo-link:hover .mbti-m {
+    text-shadow: 0 0 5px var(--mbti-green);
+}
+
+.logo-link:hover .mbti-b {
+    text-shadow: 0 0 5px var(--mbti-blue);
+}
+
+.logo-link:hover .mbti-t {
+    text-shadow: 0 0 5px var(--mbti-gold);
+}
+
+.logo-link:hover .mbti-i {
+    text-shadow: 0 0 5px var(--mbti-purple);
+}
+
+
+
+
+
+
+
+/* MAIN NAVIGATION */
+
+.main-nav {
+   
+}
+
+.main-nav ul{
+    display: flex;
+    gap: 10rem;
+}
+
+.main-nav-li {
+    list-style: none;
+
+}
+
+.nav-btn {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.65rem;
+    color: #EAE6E5;
+    font-family: ttgro;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav-btn.active {
+    border-bottom: 2px solid var(--white1);
+    border-radius: 0.3rem;
+  }
+
+
+.btn-home:hover {
+    color: #21fc9e;
+    text-shadow: 0 0 1.6rem var(--mbti-green);
+}
+
+.btn-create:hover {
+    color: #3BC9DB;
+    text-shadow: 0 0 1.6rem var(--mbti-blue);
+
+}
+
+.btn-mbti:hover {
+    color: #ffd43b;
+    text-shadow: 0 0 1.6rem var(--mbti-gold);
+}
+
+.btn-about:hover {
+    color: #DA77F2;
+    text-shadow: 0 0 1.6rem var(--mbti-purple);
+}
+
+
+/*  ACCOUNT  */
+.account-container {
+
+    width: 15rem;
+    
+    display: flex;
+    justify-content: end;
+
+    
+}
+
+.account-img {
+    border-radius: 1rem;
+    height: 4.2rem;
+    background-color: var(--mbti-purple);
+    background-color: rgba(218, 119, 242, 0.45);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(218, 119, 242, 0.3);
+
+}
+
+.account-img:hover {
+    filter: drop-shadow(0 0 4px var(--mbti-purple));
+}

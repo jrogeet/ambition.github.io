@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+footer {
+    background-color: #222;
+    /* width: 153.6rem; */
+    width: 140rem;
+    margin: 1.5rem 0;
+    border-radius: 2rem;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-container span {
+    color: white;
+    font-size: 20rem;
+}

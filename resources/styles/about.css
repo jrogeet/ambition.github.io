@@ -1,0 +1,316 @@
+@import url(/resources/styles/shared-styles.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--black1);
+}
+
+main {
+    max-width: 153.6rem;
+
+
+    margin: 0 auto;
+}
+
+  /***********************/
+ /*         HERO        */
+/***********************/
+
+.section-about-container {
+    
+    margin-top: 8.6rem;
+    padding: 2rem 0;
+    /* background-image: url('/resources/images/backgrounds/CITY_1_Rocket_Animation.gif'); */
+
+}
+
+.about-hero {
+
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32em;
+
+    text-align: center;
+    background-image: linear-gradient(#272729 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #272729 calc(100% - 1.5px)), linear-gradient(90deg, #272729 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #272729 calc(100% - 1.5px));
+    background-size: 10% 20%;
+    border: 1.5px solid #272729;
+
+}
+
+.about-header {
+    font-size: 6.4rem;
+    letter-spacing: .3rem;
+    background: radial-gradient(circle, var(--mbti-blue) 25%, var(--mbti-green) 50%, var(--mbti-gold) 75%, var(--mbti-purple) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: walvis;
+    
+}
+
+.about-para {
+    letter-spacing: 0.05rem;
+    font-size: 2.6rem;
+    line-height: 1.52;
+    font-family: offbit;
+}
+
+  /***********************/
+ /*        ROLES        */
+/***********************/
+
+
+.roles-container {
+
+
+
+    color: white;
+    
+    margin: 0 auto;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.roles-how {
+    padding: 5rem 20rem;
+    padding-bottom: 0;
+}
+
+.roles-header {
+    font-size: 5.2rem;
+    font-family: ttgro;
+}
+
+.roles-para {
+    letter-spacing: 0.05rem;
+    font-size: 2.2rem;
+}
+
+.roles-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+
+    padding: 5rem 0;
+}
+
+.roles {
+    margin: 0 auto;
+    height: 45rem;
+    width: 80%;
+    padding: 0 5rem;
+
+
+    /* border: 1px solid blueviolet; */
+    background-color: var(--black2);
+    border-radius: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roles-text {
+    /* border: 1px solid blanchedalmond; */
+    color: #fff;
+    padding: 0 10rem;
+    height:60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.role-title {
+    font-size: 6.4rem;
+    position: relative;
+    z-index: 4;
+    font-family: ttgro;
+    /* font-family: ttgro; */
+}
+
+.analyst::before {
+    content: "Analyst";
+    position: absolute;
+    font-size: 12rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -4;
+    
+    font-family: navOut;
+    color: rgba(255, 255, 255, 0.539); /* Color of the pseudo-element text */
+    /* You can adjust other styles like font-size, font-family, etc. */
+    font-family: walvis;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.539);
+    color: transparent;
+    letter-spacing: 0.4rem;
+}
+
+  .designer::before {
+    content: "Designer";
+    position: absolute;
+    font-size: 10rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -4;
+    
+    font-family: navOut;
+    color: rgba(255, 255, 255, 0.539);
+    font-family: walvis;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.539);
+    color: transparent;
+    letter-spacing: 0.4rem;
+  }
+
+  .programmer::before {
+    content: "Programmer";
+    position: absolute;
+    font-size: 10rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -4;
+    
+    font-family: navOut;
+    color: rgba(255, 255, 255, 0.539);
+    font-family: walvis;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.539);
+    color: transparent;
+    letter-spacing: 0.4rem;
+  }
+
+.role-description {
+
+    font-size: 2rem;
+    line-height: 1.52rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+}
+
+.roles-img {
+    height: 80%;
+    align-self: center;
+}
+
+
+  /***********************/
+ /*        TEAM         */
+/***********************/
+
+.team {
+    height: 60rem;
+    position: relative;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.team::before {
+    content: "";
+    height: 1.5px;
+    margin: 0 auto;
+    top: -2rem;
+    width: 91%;
+    background-color: var(--white1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team-container {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.team-header {
+    font-size: 4rem;
+    font-family: ttgro;
+}
+
+.team-deck {
+    display: flex;
+    gap: 2.5rem;
+    width:  90%;
+    height: 100%;
+    margin-top: 3rem;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.llamas-card-container, .gregorio-card-container, .ganon-card-container, .turqueza-card-container {
+    perspective: 1000px; 
+    width: 100%;
+    position: relative;
+
+}
+
+.team-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.llamas-card-container:hover .team-card, .gregorio-card-container:hover .team-card, .ganon-card-container:hover .team-card, .turqueza-card-container:hover .team-card {
+    transform: rotateY(180deg);
+    
+}
+
+.team-card-front, .team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+.team-card-back {
+    transform: rotateY(180deg);
+}
+
+
+.team-card-img {
+    height: 40rem;
+}
+
+.team-name {
+    font-size: 2.4rem;
+}
+
+.team-role {
+    font-size: 1.6rem;
+}

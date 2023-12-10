@@ -1,0 +1,871 @@
+@import url(/resources/styles/shared-styles.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* border: 4px solid greenyellow; */
+
+    background-color: var(--black1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 151.95rem;
+    margin: 0 auto;
+    
+}
+
+
+.main {
+    /* border: 1px solid cyan; */
+
+    max-width: 153.6rem;
+    margin: 0 auto;
+    margin-top: 8.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.section-input {
+    /* border: 5px solid red; */
+
+    /* height: 65rem; */
+
+    padding: 3rem 0;
+    width: 144rem;
+}
+
+
+.guide-button {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    padding-top: 0.8rem;
+    border: 1px solid var(--mbti-blue);
+    border-radius: 2.4rem;
+
+    color: var(--mbti-blue);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    animation: colorLoop 8s infinite;
+}
+
+@keyframes colorLoop {
+    0% {
+        border-color: var(--mbti-gold);
+        color: var(--mbti-gold);
+      }
+    25% {
+      border-color: var(--mbti-green);
+      color: var(--mbti-green);
+    }
+    50% {
+      border-color: var(--mbti-purple);
+      color: var(--mbti-purple);
+    }
+    75% {
+      border-color: var(--mbti-blue);
+      color: var(--mbti-blue);
+    }
+    100% {
+      border-color: var(--mbti-gold);
+      color: var(--mbti-gold);
+    }
+  }
+
+
+  /***********************/
+ /*     SELECTION       */
+/***********************/
+
+.selection-container {
+    /* border: 1px solid navajowhite; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    min-height: 62rem;
+}
+
+
+.types-selection {
+    margin: 2.8rem 0;
+    /* width: 79.3%; */
+    width: 76%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 0.9fr 0.9fr;
+    gap: 2rem;
+    /* column-gap: 2rem;
+    row-gap: 2rem; */
+    grid-auto-flow: row;
+
+    transition: all 4s ease-in-out;
+}
+
+.mbti-boxes {
+    min-height: 27.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+    transition: padding 0.225s  ease-in-out;
+    transition: padding 0.23s  ease-in-out;
+
+}
+
+
+.mbti-boxes:hover {
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.mbti-type-n-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 998;
+}
+
+.mbti-type {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.mbti-boxes:hover .mbti-type {
+    font-size: 3.2rem;
+}
+
+.mbti-avatars{
+    height: 12rem;
+
+}
+
+.mbti-type-n-img {
+    height: 12rem;
+
+}
+
+
+
+
+.mbti-boxes:hover .mbti-selection-enfj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    height: 11rem;
+}
+
+/* ENFP */
+.mbti-boxes:hover .mbti-selection-enfp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    height: 11rem;
+}
+
+/* ENTJ */
+.mbti-boxes:hover .mbti-selection-entj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    height: 11rem;
+}
+
+/* ENTP */
+.mbti-boxes:hover .mbti-selection-entp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    height: 11rem;
+}
+
+/* ESFJ */
+.mbti-boxes:hover .mbti-selection-esfj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    height: 11rem;
+}
+
+/* ESTJ */
+.mbti-boxes:hover .mbti-selection-estj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    height: 11rem;
+}
+
+/* ESFP */
+.mbti-boxes:hover .mbti-selection-esfp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    height: 11rem;
+}
+
+/* ESTP */
+.mbti-boxes:hover .mbti-selection-estp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    height: 11rem;
+}
+
+/* INFJ */
+.mbti-boxes:hover .mbti-selection-infj-img {
+    content: url('/resources/images/MBTI Avatars/gif/INFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    height: 11rem;
+}
+
+/* INFP */
+.mbti-boxes:hover .mbti-selection-infp-img {
+    content: url('/resources/images/MBTI Avatars/gif/INFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    height: 11rem;
+}
+
+/* INTJ */
+.mbti-boxes:hover .mbti-selection-intj-img {
+    content: url('/resources/images/MBTI Avatars/gif/INTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    height: 11rem;
+}
+
+/* INTP */
+.mbti-boxes:hover .mbti-selection-intp-img {
+    content: url('/resources/images/MBTI Avatars/gif/INTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    height: 11rem;
+}
+
+/* ISFJ */
+.mbti-boxes:hover .mbti-selection-isfj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    height: 11rem;
+}
+
+/* ISTJ */
+.mbti-boxes:hover .mbti-selection-istj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    height: 11rem;
+}
+
+/* ISFP */
+.mbti-boxes:hover .mbti-selection-isfp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    height: 11rem;
+}
+
+/* ISTP */
+.mbti-boxes:hover .mbti-selection-istp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    height: 11rem;
+}
+
+
+
+
+/* .mbti-type-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.mbti-boxes:hover .mbti-type-input {
+    visibility: visible; 
+    opacity: 1;
+} */
+
+/* VISIBILITY OF MBTI-InputField WHEN HOVERED & IF NOT EMPTY  */
+.mbti-type-input {
+    display: none;
+    z-index: 999;
+}
+  
+  .mbti-boxes:hover .mbti-type-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+
+  .mbti-type-input.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -2rem;
+  }
+
+.add-name {
+    max-width: 14rem;
+    width: 10rem;
+    text-align: center;
+    background-color: var(--black2);
+    height: 3rem;
+
+    color: var(--white1);
+    font-weight: bold;
+
+    border-radius: rem;
+    letter-spacing: 0.16rem;
+    font-size: 1.6rem;
+}
+
+.add-name::placeholder {
+    font-size: 1.4rem;
+}
+
+.mbti-ok-button {
+    color: var(--white1);
+    font-weight: bold;
+    font-family: ttgro;
+    letter-spacing: 0.1rem;
+
+    width: 10rem;
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+
+    cursor: pointer;
+    border: 1px solid var(--white1);
+    background-color: var(--black3);
+
+    transition: all 0.15s ease-in-out;
+}
+
+.mbti-ok-button:hover {
+    background-color: var(--white1);
+    color: var(--black1);
+}
+
+/* BORDERS */
+
+.type-green {
+    border: 1.5px solid var(--mbti-green);
+    border-radius: 2rem;
+    background: rgba(33, 252, 158, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.type-green:hover{
+    box-shadow: 0 0 1.6rem var(--mbti-green);
+}
+
+.type-violet {
+    border: 1.5px solid var(--mbti-purple);
+    border-radius: 2rem;
+    background: rgba(218, 119, 242, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.type-violet:hover{
+    box-shadow: 0 0 1.6rem var(--mbti-purple);
+}
+
+.type-blue {
+    border: 1.5px solid var(--mbti-blue);
+    border-radius: 2rem;
+    background: rgba(59, 201, 219, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.type-blue:hover{
+    box-shadow: 0 0 1.6rem var(--mbti-blue);
+}
+
+.type-gold {
+    border: 1.5px solid var(--mbti-gold);
+    border-radius: 2rem;
+    background: rgba(255, 212, 59, 0.14);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+}
+
+.type-gold:hover{
+    box-shadow: 0 0 1.6rem var(--mbti-gold);
+}
+
+
+
+
+  /*************************************/
+ /*         USER LIST / TABLE         */
+/*************************************/
+
+.main-user-list {
+    background-color: var(--black2);
+    border-radius: 17px;
+    width: 27rem;
+    height: 58rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ACTUAL TABLE */
+.table-container {
+    overflow-y: auto;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.list-table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    border-collapse: separate;
+}
+
+.list-table tr th, .list-table tr td {
+    border-bottom: 1px solid #bbb;
+
+}
+
+.list-table tr:first-child th:first-child {
+    border-top-left-radius: 16px;
+  }
+  
+  /* top-right border-radius */
+  .list-table tr:first-child th:last-child {
+    border-top-right-radius: 16px;
+  }
+  
+  /* bottom-left border-radius */
+  .list-table tr:last-child td:first-child {
+    border-bottom-left-radius: 16px;
+  }
+  
+  /* bottom-right border-radius */
+  .list-table tr:last-child td:last-child {
+    border-bottom-right-radius: 16px;
+  }
+
+.table-head {
+    background-color: var(--black3);
+
+
+    padding: 2rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+.table-header {
+    font-size: 1.4rem;
+
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    font-family: walvis;
+    font-family: ttgro;
+    /* border: 2px solid var(--white1); */
+}
+
+.table-header:first-child {
+    border-right: 1px solid white;
+}
+
+.table-body {
+    background-color: var(--black2);
+
+    max-height: 50%;
+}
+
+.table-body tr{
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--white1);
+}
+
+.table-body td {
+    padding: 0.8rem 0;
+    /* border: 2px solid var(--white1); */
+
+}
+
+.table-body td:first-child{
+    border-right: 1px solid white;
+}
+
+/* .table-body td, .table-body th {
+    border-bottom: 2px solid var(--white1);
+    border-right: 2px solid var(--white1);
+} */
+
+
+
+/* NUMBER OF GROUPS */
+.list-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+
+}
+
+.grp-inp {
+    width: 23rem;
+    height: 3rem;
+    font-family: offbit;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--white1);
+    border-radius: 0.4rem;
+
+    font-weight: bold;
+    background-color: var(--black3);
+    font-size: 1.8rem;
+}
+
+.grp-inp::placeholder {
+    font-family: offbit;
+    font-family: mondwest;
+    letter-spacing: 0.2px;
+    font-size: 1.4rem;
+}
+
+.group-usersBtn {
+    width: 100%;
+    height: 4.5rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.group-userTxt {
+    color: var(--black1);
+    font-family: walvis;
+    font-size: 3.2rem;
+    text-decoration: none;
+}
+
+
+  /***********************/
+ /*       RESULT        */
+/***********************/
+.section-result {
+    min-height: 40rem;
+}
+
+.result-wrap {
+    background-color: var(--black2);
+    border-radius: 2.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    padding: 2.8rem 0;
+    margin: 0 auto;
+
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+.result-wrap::before {
+    content: '';
+    position: absolute;
+    top: -3rem; /* Negative value to position above the parent */
+    left: -10px; /* Negative value to extend outside the parent on the left */
+    width: calc(100% + 20px); /* Extend the width by 20px to cover outside the parent */
+    height: 0.15rem; /* Set the height of the border */
+    /* background-image: linear-gradient(to right, var(--mbti-green), var(--mbti-purple), var(--mbti-blue), var(--mbti-gold));  */
+    background-color: var(--white1);
+}
+
+.result-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.result-header {
+    font-size:  5.4rem;
+    letter-spacing: 0.2rem;
+    font-family: walvis;
+}
+
+/* ROW AND COLUMN SWITCH(BUTTON) */
+
+.row-column-container {
+    /* position: absolute; */
+    top: 10rem;
+
+    display: flex;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 4.6rem;
+}
+
+.result-column {
+    height: 3.8rem;
+    width: 3.8rem;
+    background-image: url(/resources/images/PixelArt/column-purple-transparent.png);
+    background-size: cover;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+    
+    background-color: rgba(33, 252, 158, 0.45);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(33, 252, 158, 0.3);
+}
+
+.result-column:hover {
+    filter: drop-shadow(0 0 4px var(--mbti-green));
+    height: 4rem;
+}
+
+.result-row {
+    /* color: var(--black1);
+    font-family: brick; */
+    height: 3.8rem;
+    width: 3.8rem;
+    background-image: url(/resources/images/PixelArt/row-green-transparent.png);
+    background-size: cover;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+
+    background-color: rgba(218, 119, 242, 0.45);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(218, 119, 242, 0.3);
+}
+
+.result-row:hover {
+    filter: drop-shadow(0 0 4px var(--mbti-purple));
+    height: 4rem;
+}
+
+
+/* TABLES */
+
+.table-result {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    row-gap: 4.4rem;
+
+    min-width: 70rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+
+/* OUTER TABLE */
+.result-outer-table {
+/* WHOLE GROUP TABLE */
+    text-align: center;
+    /* border: 1px solid var(--mbti-purple); */
+    margin-top: 2rem;
+    max-width: 70rem;
+    min-width: 50rem;
+    margin: 0 auto;
+}
+
+.result-outer-thead {
+
+}
+
+.result-outer-tbody {
+
+}
+
+.result-outer-headrow {
+
+}
+
+.result-outer-headcell {
+/* WHERE GROUP # LOCATED */
+}
+
+.table-group-number {
+    font-size: 4rem;
+    font-family: walvis;
+    letter-spacing: 0.05rem;
+}
+
+.table-group-number-class1 {
+    color: var(--mbti-green);
+    font-family: walvis;
+}
+
+.table-group-number-class2 {
+    color: var(--mbti-blue);
+    font-family: walvis;
+}
+
+.table-group-number-class3 {
+    color: var(--mbti-gold);
+    font-family: walvis;
+}
+
+.table-group-number-class4 {
+    color: var(--mbti-purple);
+    font-family: walvis;
+}
+
+/* INNER TABLE */
+.result-inner-table {
+/* INNER / ROLE TABLES */
+    border-radius: 2.6rem;
+    background-color: var(--black3);
+    /* width: 100%; */
+    margin-top: 1.4rem;
+    padding: 2rem 0;
+    border-collapse: collapse;
+}
+
+.result-inner-thead {
+
+}
+
+.result-inner-tbody {
+    /* border: 1px solid red; */
+}
+
+
+
+.result-inner-headrow{
+
+}
+
+.result-inner-headcell {
+/* SUB-GROUP / ROLE TITLE (ex: Designers) */
+
+}
+
+.table-role-title {
+    font-size: 4rem;
+    letter-spacing: 0.23rem;
+    font-family: ttgro;
+}
+
+
+
+.result-inner-row {
+    border-bottom: none;
+}   
+
+.result-inner-row:last-child {
+    border-bottom: none;
+}
+
+.result-inner-imgcell {
+    /* CELL WHERE THE ICON / LEGEND SHOULD BE */
+    width: 3.2%;
+    /* border: 1px solid var(--mbti-blue); */
+}
+
+.lead-banner-star {
+    height: 3.8rem;
+}
+
+.lead-banner-normal {
+    height: 3.2rem;
+}
+
+.result-inner-namecell {
+    /* MEMBER NAMES */
+    font-size: 2.7rem;
+    letter-spacing: 0.16rem;
+    
+}
+
+.result-inner-typecell {
+    /* MEMBER MBTI TYPES */
+    font-size: 2.7rem;
+    padding-right: 3.2%;
+    letter-spacing: 0.15rem;
+}
+
+.result-inner-usercells {
+    width: 10rem;
+    border-bottom: 1px solid var(--white1);
+    border-right: 1px solid var(--white1);
+}
+
+.result-inner-usercells:last-child {
+    border-right: none;
+}
+
+
+
+.result-outer-desrow {
+
+}
+
+.result-outer-descell {
+
+}
+
+.result-outer-anrow {
+
+}
+
+.result-outer-ancell {
+
+}
+
+.result-outer-progrow {
+
+}
+
+.result-outer-progcell {
+
+}
+

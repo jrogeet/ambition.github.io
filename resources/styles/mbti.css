@@ -1,0 +1,400 @@
+@import url(/resources/styles/shared-styles.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    margin: 0 auto;
+    background-color: var(--black1);
+    /* filter: invert(95%) hue-rotate(180deg);     */
+}
+
+/* img, video, iframe {
+    filter: invert(95%) hue-rotate(180deg);    
+} */
+
+main {
+    max-width: 153.6rem;
+
+
+    margin: 0 auto;
+    flex: 1;
+
+}
+
+
+
+  /***********************/
+ /*         HERO        */
+/***********************/
+
+.section-hero-mbti {
+
+    margin-top: 8.6rem;
+    /* background-image: url('/resources/images/backgrounds/CITY_1_Rocket_Animation.gif'); */
+    /* padding: 4.4rem 0; */
+    background-image: radial-gradient(var(--black2) 20%, transparent 20%);
+    background-size: 1.5rem 1.5rem;
+
+}   
+
+.mbti-hero {
+    min-height: 55rem;
+
+    padding: 0 30rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    text-align: center;
+}
+
+.mbti-hero-header {
+    padding-top: 12rem;
+}
+
+.mbti-hero-header h1 {
+    font-size: 5.2rem;
+    letter-spacing: .3rem;
+    font-family: ttvar;
+}
+
+.mbti-hero-header p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding: 1.4rem 6rem 0 6rem;
+    letter-spacing: 0.05rem;
+}
+
+.mbti-hero-test {
+    height: 10rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbti-test-container {
+
+    overflow: hidden;
+
+    box-shadow: inset 0 0 0 2px var(--mbti-blue),
+    inset 0 0 0 4px #2c90fc,
+    inset 0 0 0 6px #b8fd33,
+    inset 0 0 0 8px #fec837;
+}
+
+.mbti-test-btn {
+    width: 14rem;
+    height: 3.6rem;
+
+
+
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: ttgro;
+    letter-spacing: 0.2rem;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right,var(--mbti-green) 0%, var(--mbti-blue) 25%, var(--mbti-gold) 50%, var(--mbti-green) 75%, var(--mbti-purple) 100%);
+    border-image-slice: 1;
+    transition: all .2s ease-in-out .2s ;
+}
+
+.mbti-test-btn:hover {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right,var(--mbti-green) 0%, var(--mbti-purple) 25%, var(--mbti-green) 50%, var(--mbti-blue) 75%, var(--mbti-gold) 100%);
+    border-image-slice: 1;
+    color: var(--mbti-gold);
+}
+
+.mbti-test-support {
+    letter-spacing: 0.05rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+    font-family: ttvar;
+
+}
+
+.test-support1 {
+    margin-top: 1.2rem;
+}
+
+  /***********************/
+ /*        CARDS        */
+/***********************/
+
+
+.deck-container {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.deck-header {
+    font-size: 3.6rem;
+
+    padding: 3.4rem 0;
+    text-align: center;
+    
+}
+
+.deck {
+    padding: 2rem 0rem;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    row-gap: 4rem;
+    margin-bottom: 10rem;
+}   
+
+.cards {
+    height: 40rem;
+
+
+    border-radius: 4rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card-purple {
+    background-color: #DA77F2;
+    border: 1.5px solid var(--mbti-purple);
+    background: rgba(218, 119, 242, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.card-green {
+    background-color: #21fc9e;
+    border: 1.5px solid var(--mbti-green);
+    background: rgba(33, 252, 158, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.card-blue {
+    background-color: #3BC9DB;
+    border: 1.5px solid var(--mbti-blue);
+    background: rgba(59, 201, 219, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.card-gold {
+    background-color: #ffd43b;
+    border: 1.5px solid var(--mbti-gold);
+    background: rgba(255, 212, 59, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.cards::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #12130F 40%, rgba(0, 0, 0, 0)); /* Gradient from black to transparent */
+    z-index: 1; /* Places the pseudo-element on top of the parent */
+}
+
+
+.mbti-abimg {
+    height: 20rem;
+    position: absolute;
+    margin-left: 14%;
+    margin-top: 5rem;
+    z-index: -1;
+    /* filter: grayscale(100%); */
+    transition: filter 0.3s ease;
+}
+
+.cards:hover .mbti-enfj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    
+}
+
+/* ENFP */
+.cards:hover .mbti-enfp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    
+}
+
+/* ENTJ */
+.cards:hover .mbti-entj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    
+}
+
+/* ENTP */
+.cards:hover .mbti-entp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ENTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    
+}
+
+/* ESFJ */
+.cards:hover .mbti-esfj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    
+}
+
+/* ESTJ */
+.cards:hover .mbti-estj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    
+}
+
+/* ESFP */
+.cards:hover .mbti-esfp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    
+}
+
+/* ESTP */
+.cards:hover .mbti-estp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ESTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    
+}
+
+/* INFJ */
+.cards:hover .mbti-infj-img {
+    content: url('/resources/images/MBTI Avatars/gif/INFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    
+}
+
+/* INFP */
+.cards:hover .mbti-infp-img {
+    content: url('/resources/images/MBTI Avatars/gif/INFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-green));
+    
+}
+
+/* INTJ */
+.cards:hover .mbti-intj-img {
+    content: url('/resources/images/MBTI Avatars/gif/INTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    
+}
+
+/* INTP */
+.cards:hover .mbti-intp-img {
+    content: url('/resources/images/MBTI Avatars/gif/INTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-purple));
+    
+}
+
+/* ISFJ */
+.cards:hover .mbti-isfj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISFJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    
+}
+
+/* ISTJ */
+.cards:hover .mbti-istj-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISTJ-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-blue));
+    
+}
+
+/* ISFP */
+.cards:hover .mbti-isfp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISFP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    
+}
+
+/* ISTP */
+.cards:hover .mbti-istp-img {
+    content: url('/resources/images/MBTI Avatars/gif/ISTP-GIF.gif');
+    filter: drop-shadow(0 0 8px var(--mbti-gold));
+    
+}
+
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+    padding: 0 1.6rem;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+.card-header{
+    font-size: 4.2rem;
+    font-family: walvis;
+    letter-spacing: 0.3rem;
+}
+
+.mbti-m, .mbti-b, .mbti-t, .mbti-i {
+    font-family: walvis;
+}
+
+.card-header-acronym {
+    font-size: 1.5rem;
+    font-family: ttgro;
+    margin-top: 0rem;
+    color: rgb(167, 167, 167);
+}
+
+.card-description {
+    font-size: 1.4rem;
+    margin-bottom: 3.5rem;
+    margin-top: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.mbti-mbti {
+    letter-spacing: 0.4rem;
+    font-family: ttgro;
+}

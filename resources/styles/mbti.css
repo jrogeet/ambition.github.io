@@ -355,7 +355,7 @@ main {
 }
 
 .cards:hover .mbti-enfj-img {
-    content: url('resources/images/MBTI Avatars/gif/ENFJ-GIF.gif');
+    content: url('../images/MBTI Avatars/gif/ENFJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-green));
     
 }

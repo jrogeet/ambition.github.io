@@ -1,81 +1,81 @@
 @font-face {
     font-family: neuebit;
-    src: url(resources/fonts/Pixel/PPNeueBit-Bold.otf);
+    src: url(/resources/fonts/Pixel/PPNeueBit-Bold.otf);
 }
 
 /* @font-face {
     font-family: mondwest;
-    src: url(resources/fonts/Pixel/PPMondwest-Regular.otf);
+    src: url(/resources/fonts/Pixel/PPMondwest-Regular.otf);
 } */
 
 /* @font-face {
     font-family: pixelVCR;
-    src: url(resources/fonts/Pixel/VCRosdNEUE.ttf);
+    src: url(/resources/fonts/Pixel/VCRosdNEUE.ttf);
 } */
 
 @font-face {
     font-family: offbit;
-    src: url(resources/fonts/Pixel/OffBitTrial-Regular.otf);
+    src: url(/resources/fonts/Pixel/OffBitTrial-Regular.otf);
 }
 
 @font-face {
     font-family: brick;
-    src: url(resources/fonts/Pixel/NTBrickSans.otf);
+    src: url(/resources/fonts/Pixel/NTBrickSans.otf);
 }
 
 @font-face {
     font-family: alegreya;
-    src: url(resources/fonts/Sans-Serif/AlegreyaSans-Light.ttf);
+    src: url(/resources/fonts/Sans-Serif/AlegreyaSans-Light.ttf);
 }
 
 @font-face {
     font-family: opensans-reg;
-    src: url(resources/fonts/Sans-Serif/OpenSans_Condensed-Regular.ttf);
+    src: url(/resources/fonts/Sans-Serif/OpenSans_Condensed-Regular.ttf);
 }
 
 @font-face {
     font-family: opensans-light;
-    src: url(resources/fonts/Sans-Serif/OpenSans_Condensed-Light.ttf);
+    src: url(/resources/fonts/Sans-Serif/OpenSans_Condensed-Light.ttf);
 }
 
 @font-face {
     font-family: garnettblack;
-    src: url(resources/fonts/Garnett-Black.ttf);
+    src: url(/resources/fonts/Garnett-Black.ttf);
 }
 
 @font-face {
     font-family: garnettbold;
-    src: url(resources/fonts/Garnett-Bold.ttf);
+    src: url(/resources/fonts/Garnett-Bold.ttf);
 }
 
 @font-face {
     font-family: garnettregular;
-    src: url(resources/fonts/Garnett-Regular.ttf);
+    src: url(/resources/fonts/Garnett-Regular.ttf);
 }
 
 @font-face {
     font-family: garnettsemibold;
-    src: url(resources/fonts/Garnett-Semibold.ttf);
+    src: url(/resources/fonts/Garnett-Semibold.ttf);
 }
 
 @font-face {
     font-family: ttgro;
-    src: url(resources/fonts/tt-alientz-trial-grotesque.otf);
+    src: url(/resources/fonts/tt-alientz-trial-grotesque.otf);
 }
 
 @font-face {
     font-family: ttvar;
-    src: url(resources/fonts/tt-alientz-trial-var.ttf);
+    src: url(/resources/fonts/tt-alientz-trial-var.ttf);
 }
 
 @font-face {
     font-family: walvis;
-    src: url(resources/fonts/walvis-demo-regular.otf);
+    src: url(/resources/fonts/walvis-demo-regular.otf);
 }
 
 @font-face {
     font-family: navOut;
-    src: url(resources/fonts/Outline/Navada\ Outline\ Demo.otf);
+    src: url(/resources/fonts/Outline/Navada\ Outline\ Demo.otf);
 }
 
 ::-webkit-scrollbar {

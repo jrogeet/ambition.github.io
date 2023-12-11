@@ -781,8 +781,8 @@ backdrop-filter: blur(9px);
     font-family: brick; */
     height: 3.8rem;
     width: 3.8rem;
-    /* background-image: url(resources/images/PixelArt/row-green-transparent.png); */
-    background-image: url(../images/PixelArt/row-green-transparent.png);
+    background-image: url(resources/images/PixelArt/row-green-transparent.png);
+    /* background-image: url(../images/PixelArt/row-green-transparent.png); */
     background-size: cover;
     border: none;
     border-radius: 0.3rem;

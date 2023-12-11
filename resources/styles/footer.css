@@ -13,15 +13,104 @@ footer {
     background-color: #222;
     /* width: 153.6rem; */
     width: 140rem;
+    height: 35rem;
     margin: 1.5rem 0;
     border-radius: 2rem;
 }
 
-.footer-container {
-    text-align: center;
+li {
+ list-style: none;
 }
 
-.footer-container span {
-    color: white;
-    font-size: 20rem;
+
+.footer-container {
+    width: 130rem;
+    height: 30rem;
+    background-color: var(--black3);
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    clip-path: polygon(      
+        0% 0px,                 /* top left */
+        0px 0%,                 /* top left */
+        0 0%,    /* top right */
+        100% 0px,               /* top right */
+        100% calc(100% - 7rem),  /* bottom right */
+        calc(100% - 7rem) 100%,  /* bottom right */
+        0px 100%,               /* bottom left */
+        0 0      /* bottom left */
+    );
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-footer {
+    font-size: 7rem;
+    font-family: walvis;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    height: 100%;
+    padding-right: 4rem;
+
+}
+
+.tagline {
+    font-size:2rem;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+}
+
+.footer-nav {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav-header {
+    font-size: 4rem;
+    font-family: navout;
+}
+
+.footer-nav-ul {
+    text-align: start;
+}
+
+.footer-nav-li {
+    padding: 1.8rem;
+}
+
+.footer-contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-contact-header{
+    font-family: navout;
+    font-size: 4rem;
+
+}
+
+.footer-contact-ul {
+    padding-top: 3rem;
+}
+
+.footer-contact-li {
+    font-size: 1.6rem;
+    font-family: ttgro;
 }

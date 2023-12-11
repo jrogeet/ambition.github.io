@@ -153,6 +153,8 @@ function handleKeyPress(event, inputId) {
 }
 
 
+
+
 // *****************************************
 // *   DISPLAY INPUTS IN THE RIGHT TABLE   *
 // *****************************************

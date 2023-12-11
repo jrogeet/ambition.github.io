@@ -1,115 +1,4 @@
-@import url(resources/styles/shared-styles.css);
-
-/* CSS FROM shared-styles.css */
-
-@font-face {
-    font-family: offbit;
-    src: url(resources/fonts/Pixel/OffBitTrial-Regular.otf);
-}
-
-@font-face {
-    font-family: brick;
-    src: url(resources/fonts/Pixel/NTBrickSans.otf);
-}
-
-@font-face {
-    font-family: alegreya;
-    src: url(resources/fonts/Sans-Serif/AlegreyaSans-Light.ttf);
-}
-
-@font-face {
-    font-family: opensans-reg;
-    src: url(resources/fonts/Sans-Serif/OpenSans_Condensed-Regular.ttf);
-}
-
-@font-face {
-    font-family: opensans-light;
-    src: url(resources/fonts/Sans-Serif/OpenSans_Condensed-Light.ttf);
-}
-
-@font-face {
-    font-family: garnettblack;
-    src: url(resources/fonts/Garnett-Black.ttf);
-}
-
-@font-face {
-    font-family: garnettbold;
-    src: url(resources/fonts/Garnett-Bold.ttf);
-}
-
-@font-face {
-    font-family: garnettregular;
-    src: url(resources/fonts/Garnett-Regular.ttf);
-}
-
-@font-face {
-    font-family: garnettsemibold;
-    src: url(resources/fonts/Garnett-Semibold.ttf);
-}
-
-@font-face {
-    font-family: ttgro;
-    src: url(resources/fonts/tt-alientz-trial-grotesque.otf);
-}
-
-@font-face {
-    font-family: ttvar;
-    src: url(resources/fonts/tt-alientz-trial-var.ttf);
-}
-
-@font-face {
-    font-family: walvis;
-    src: url(resources/fonts/walvis-demo-regular.otf);
-}
-
-@font-face {
-    font-family: navOut;
-    src: url(resources/fonts/Outline/Navada\ Outline\ Demo.otf);
-}
-
-::-webkit-scrollbar {
-    width: 1rem; /* Adjust the width */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: var(--black3); /* Track color */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--white1); /* Thumb color */
-    border-radius: 6px; /* Rounded corners */
-  }
-
-:root {
-    --mbti-blue: #3BC9DB;
-    --mbti-gold: #ffd43b;
-    --mbti-green: #21FC9E;
-    --mbti-purple: #DA77F2;
-
-    /* --black1: #12130F; */
-    --black1: #030303;
-    --black2: #1A1A1B;
-    --black3: #272729;
-
-    --white1: #e9e9ea;
-}
-
-.mbti-m {
-    color: var(--mbti-green);
-}
-
-.mbti-b {
-    color: var(--mbti-blue);
-}
-
-.mbti-t {
-    color: var(--mbti-gold);
-}
-
-.mbti-i {
-    color: var(--mbti-purple);
-}
-/* END */
+@import url(/resources/styles/shared-styles.css);
 
 * {
     padding: 0;
@@ -285,112 +174,112 @@ body {
 
 
 .mbti-boxes:hover .mbti-selection-enfj-img {
-    content: url('resources/images/MBTI Avatars/gif/ENFJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ENFJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-green));
     height: 11rem;
 }
 
 /* ENFP */
 .mbti-boxes:hover .mbti-selection-enfp-img {
-    content: url('resources/images/MBTI Avatars/gif/ENFP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ENFP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-green));
     height: 11rem;
 }
 
 /* ENTJ */
 .mbti-boxes:hover .mbti-selection-entj-img {
-    content: url('resources/images/MBTI Avatars/gif/ENTJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ENTJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-purple));
     height: 11rem;
 }
 
 /* ENTP */
 .mbti-boxes:hover .mbti-selection-entp-img {
-    content: url('resources/images/MBTI Avatars/gif/ENTP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ENTP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-purple));
     height: 11rem;
 }
 
 /* ESFJ */
 .mbti-boxes:hover .mbti-selection-esfj-img {
-    content: url('resources/images/MBTI Avatars/gif/ESFJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ESFJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-blue));
     height: 11rem;
 }
 
 /* ESTJ */
 .mbti-boxes:hover .mbti-selection-estj-img {
-    content: url('resources/images/MBTI Avatars/gif/ESTJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ESTJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-blue));
     height: 11rem;
 }
 
 /* ESFP */
 .mbti-boxes:hover .mbti-selection-esfp-img {
-    content: url('resources/images/MBTI Avatars/gif/ESFP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ESFP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-gold));
     height: 11rem;
 }
 
 /* ESTP */
 .mbti-boxes:hover .mbti-selection-estp-img {
-    content: url('resources/images/MBTI Avatars/gif/ESTP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ESTP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-gold));
     height: 11rem;
 }
 
 /* INFJ */
 .mbti-boxes:hover .mbti-selection-infj-img {
-    content: url('resources/images/MBTI Avatars/gif/INFJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/INFJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-green));
     height: 11rem;
 }
 
 /* INFP */
 .mbti-boxes:hover .mbti-selection-infp-img {
-    content: url('resources/images/MBTI Avatars/gif/INFP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/INFP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-green));
     height: 11rem;
 }
 
 /* INTJ */
 .mbti-boxes:hover .mbti-selection-intj-img {
-    content: url('resources/images/MBTI Avatars/gif/INTJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/INTJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-purple));
     height: 11rem;
 }
 
 /* INTP */
 .mbti-boxes:hover .mbti-selection-intp-img {
-    content: url('resources/images/MBTI Avatars/gif/INTP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/INTP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-purple));
     height: 11rem;
 }
 
 /* ISFJ */
 .mbti-boxes:hover .mbti-selection-isfj-img {
-    content: url('resources/images/MBTI Avatars/gif/ISFJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ISFJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-blue));
     height: 11rem;
 }
 
 /* ISTJ */
 .mbti-boxes:hover .mbti-selection-istj-img {
-    content: url('resources/images/MBTI Avatars/gif/ISTJ-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ISTJ-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-blue));
     height: 11rem;
 }
 
 /* ISFP */
 .mbti-boxes:hover .mbti-selection-isfp-img {
-    content: url('resources/images/MBTI Avatars/gif/ISFP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ISFP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-gold));
     height: 11rem;
 }
 
 /* ISTP */
 .mbti-boxes:hover .mbti-selection-istp-img {
-    content: url('resources/images/MBTI Avatars/gif/ISTP-GIF.gif');
+    content: url('/resources/images/MBTI Avatars/gif/ISTP-GIF.gif');
     filter: drop-shadow(0 0 8px var(--mbti-gold));
     height: 11rem;
 }
@@ -757,7 +646,7 @@ backdrop-filter: blur(9px);
 .result-column {
     height: 3.8rem;
     width: 3.8rem;
-    background-image: url(resources/images/PixelArt/column-purple-transparent.png);
+    background-image: url(/resources/images/PixelArt/column-purple-transparent.png);
     background-size: cover;
     border: none;
     border-radius: 0.3rem;
@@ -781,8 +670,7 @@ backdrop-filter: blur(9px);
     font-family: brick; */
     height: 3.8rem;
     width: 3.8rem;
-    background-image: url(resources/images/PixelArt/row-green-transparent.png);
-    /* background-image: url(../images/PixelArt/row-green-transparent.png); */
+    background-image: url(/resources/images/PixelArt/row-green-transparent.png);
     background-size: cover;
     border: none;
     border-radius: 0.3rem;
@@ -822,10 +710,9 @@ backdrop-filter: blur(9px);
 .result-outer-table {
 /* WHOLE GROUP TABLE */
     text-align: center;
-    /* border: 1px solid var(--mbti-purple); */
     margin-top: 2rem;
     max-width: 70rem;
-    min-width: 50rem;
+    min-width: 43rem;
     margin: 0 auto;
 }
 
@@ -834,7 +721,7 @@ backdrop-filter: blur(9px);
 }
 
 .result-outer-tbody {
-
+    border: 1px solid red;
 }
 
 .result-outer-headrow {
@@ -910,8 +797,12 @@ backdrop-filter: blur(9px);
 
 
 .result-inner-row {
-    border-bottom: none;
+
 }   
+
+.result-inner-row:last-child td {
+    border-bottom: none;
+}
 
 .result-inner-row:last-child {
     border-bottom: none;
@@ -935,13 +826,11 @@ backdrop-filter: blur(9px);
     /* MEMBER NAMES */
     font-size: 2.7rem;
     letter-spacing: 0.16rem;
-    
 }
 
 .result-inner-typecell {
     /* MEMBER MBTI TYPES */
     font-size: 2.7rem;
-    padding-right: 3.2%;
     letter-spacing: 0.15rem;
 }
 
@@ -954,7 +843,6 @@ backdrop-filter: blur(9px);
 .result-inner-usercells:last-child {
     border-right: none;
 }
-
 
 
 .result-outer-desrow {

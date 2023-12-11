@@ -1,7 +1,5 @@
 @import url(/resources/styles/shared-styles.css);
 
-
-
 * {
     padding: 0;
     margin: 0;
@@ -393,6 +391,11 @@ main {
     margin-bottom: 3.5rem;
     margin-top: 1.8rem;
     letter-spacing: 0.1rem;
+    transition: all .2s ease;
+}
+
+.cards:hover .card-description{
+    font-size: 1.6rem;
 }
 
 

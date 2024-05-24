@@ -1,4 +1,4 @@
-# ambition.github.io
+# aMBiTIon
 
 The website for our Software Engineering 1 title proposal.
 No backend/database
